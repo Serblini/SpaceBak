@@ -12,12 +12,6 @@ module.exports = new Sequelize(
     host: process.env.PGHOST,
     port: process.env.PGPORT,
 
-    dialectOptions: {
-      ssl: {
-        require: true,
-        rejectUnauthorized: false,
-      },
-    },
   }
 );
 
